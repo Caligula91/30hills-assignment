@@ -1,0 +1,39 @@
+{
+  "name": "30hills-socialnetwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js"
+  },
+  "author": "Caligula91",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jasmine": "^4.1.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base"
+    ],
+    "rules": {
+      "no-underscore-dangle": 0,
+      "consistent-return": 0,
+      "max-len": 0,
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "req|res|next|val"
+        }
+      ]
+    }
+  }
+}
